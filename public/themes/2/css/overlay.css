@@ -1,0 +1,113 @@
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	text-align:center;
+	background: rgba(0,0,0,0.8);
+	z-index:999;
+}
+.overlay:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -.25em;
+}
+.search-holder{
+	width:700px;
+	position:relative;
+	display:inline-block;
+	vertical-align:middle;
+	color:#fff;
+}
+.search-holder .form-control{
+	background: none;
+	border-radius: 0;
+	border: none;
+	border-bottom: 2px solid #a1a1a1;
+	height:auto;
+	font-size:50px;
+	color:#f2f2f2;
+	box-shadow:none !important;
+	padding-right:50px;
+	text-align:center;
+}
+.search-holder .form-control:focus{
+	border-color:#f2f2f2;
+}
+.search-holder .btn{
+	font-size:25px;
+	background:none;
+	position:absolute;
+	right:0;
+	bottom:12px;
+	color:#a1a1a1;
+}
+.search-holder .btn:hover{
+	color:#f2f2f2;
+}
+.search-holder p{
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom: 50px;
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	background: url(../images/cross.png) no-repeat center center;
+	background-size:50px 50px;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+	opacity:0.6;
+	transition:all ease-in-out 200ms;
+}
+.overlay .overlay-close:hover{
+	opacity:1;
+}
+
+/* Effects */
+#page{
+	background: #fff;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+#page.overlay-open {
+	/*-webkit-transform: scale(1.1);
+	transform: scale(1.1);*/
+	
+	/*-webkit-transform: scale(0.9);
+	transform: scale(0.9);*/
+	-webkit-filter: blur(2px);
+	 filter: blur(2px);
+}
+
+.overlay-contentscale {
+	visibility: hidden;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-transition: -webkit-transform 0.5s, visibility 0s 0.5s;
+	transition: transform 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-contentscale.open {
+	visibility: visible;
+	-webkit-transform: translateY(0%);
+	transform: translateY(0%);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+

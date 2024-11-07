@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="56" viewBox="0 0 60 56">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(-70 -259) translate(20 223) translate(50 36)">
+                    <rect width="36" height="50" fill="#1768AE" rx="12"/>
+                    <rect width="60" height="50" y="6" fill="#2E92E8" rx="12"/>
+                    <path stroke="#FFF" stroke-linecap="round" stroke-width="3" d="M14 46L47 46" opacity=".2"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
